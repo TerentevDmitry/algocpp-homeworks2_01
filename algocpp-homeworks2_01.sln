@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algocpp-homeworks2_01", "algocpp-homeworks2_01.vcxproj", "{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Debug|x64.ActiveCfg = Debug|x64
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Debug|x64.Build.0 = Debug|x64
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Debug|x86.Build.0 = Debug|Win32
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Release|x64.ActiveCfg = Release|x64
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Release|x64.Build.0 = Release|x64
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Release|x86.ActiveCfg = Release|Win32
+		{CDDEA37A-5D74-4DF0-AC59-9C92BF1DBA6E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DBAB666-3DC0-4C6C-B202-A3C0A492A0BB}
+	EndGlobalSection
+EndGlobal
