@@ -3,28 +3,54 @@
 
 #include <iostream>
 
-unsigned long fibDynamic(const int num)
+unsigned long long fooFibonacci(unsigned long long* fib, const int size)
 {
-    unsigned long fib[num + 1]{};
+
+    
+
+
+    //unsigned long fib[size];
     fib[0] = 0;
     fib[1] = 1;
 
-    for (unsigned long i = 2; i <= num; ++i)
+    for (unsigned long long i = 2; i <= size; i++)
     {
         fib[i] = fib[i - 1] + fib[i - 2];
     }
-    return fib[num];
+    return fib[size];
 }
+
+
 
 
 int main(int argc, char** argv)
 {
-    int num = 0;
-    std::cout << "Введите число: ";
-    std::cin >> num;
-    std::cout << std::endl << "Числа Фибоначчи: \n";
+    setlocale(LC_ALL, "ru");
 
+    int size = 0;
+    std::cout << "Введите индекс числа Фибоначчи: ";
+    std::cin >> size;
+    
+    
+    
+    //unsigned long* fib = new unsigned long[size]; 
+
+    unsigned long long* fib = new unsigned long long[size];
+
+
+
+
+    //std::cout << std::elongndl << "Число Фибоначчи: \n";
     // Выводим число Фибоначчи
     
-    std::cout << "Число Фибоначчи: " << fibDynamic(num) << std::endl;
+    std::cout << "Число Фибоначчи: " << fooFibonacci(fib, size) << std::endl;
+
+
+
+
+
+    //delete [] fib;
+    fib = nullptr;
+    
+
 }
