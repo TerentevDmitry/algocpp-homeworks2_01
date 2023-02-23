@@ -5,11 +5,6 @@
 
 unsigned long long fooFibonacci(unsigned long long* arrFib, const int size)
 {
-
-    
-
-
-    //unsigned long fib[size];
     arrFib[0] = 0;
     arrFib[1] = 1;
 
@@ -20,9 +15,6 @@ unsigned long long fooFibonacci(unsigned long long* arrFib, const int size)
     return arrFib[size];
 }
 
-
-
-
 int main()
 {
     setlocale(LC_ALL, "ru");
@@ -31,26 +23,10 @@ int main()
     std::cout << "Введите индекс числа Фибоначчи: ";
     std::cin >> size;
     
-    
-    
-    //unsigned long* fib = new unsigned long[size]; 
-
     unsigned long long* arrFib = new unsigned long long[size];
-
-
-
-
-    //std::cout << std::elongndl << "Число Фибоначчи: \n";
-    // Выводим число Фибоначчи
-    
+       
     std::cout << "Число Фибоначчи: " << fooFibonacci(arrFib, size) << std::endl;
-
-
-
-
 
     delete [] arrFib;
     arrFib = nullptr;
-    
-
 }
