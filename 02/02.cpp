@@ -23,10 +23,13 @@ int main()
     std::cout << "Введите индекс числа Фибоначчи: ";
     std::cin >> size;
     
-    unsigned long long* arrFib = new unsigned long long[size];
+    unsigned long long* arrFib = new unsigned long long[size] {};
        
     std::cout << "Число Фибоначчи: " << fooFibonacci(arrFib, size) << std::endl;
 
-    delete [] arrFib;
+    
+    
+
+    //delete[] arrFib; 
     arrFib = nullptr;
 }
