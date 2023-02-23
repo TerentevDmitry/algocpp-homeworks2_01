@@ -3,27 +3,27 @@
 
 #include <iostream>
 
-unsigned long long fooFibonacci(unsigned long long* fib, const int size)
+unsigned long long fooFibonacci(unsigned long long* arrFib, const int size)
 {
 
     
 
 
     //unsigned long fib[size];
-    fib[0] = 0;
-    fib[1] = 1;
+    arrFib[0] = 0;
+    arrFib[1] = 1;
 
     for (unsigned long long i = 2; i <= size; i++)
     {
-        fib[i] = fib[i - 1] + fib[i - 2];
+        arrFib[i] = arrFib[i - 1] + arrFib[i - 2];
     }
-    return fib[size];
+    return arrFib[size];
 }
 
 
 
 
-int main(int argc, char** argv)
+int main()
 {
     setlocale(LC_ALL, "ru");
 
@@ -35,7 +35,7 @@ int main(int argc, char** argv)
     
     //unsigned long* fib = new unsigned long[size]; 
 
-    unsigned long long* fib = new unsigned long long[size];
+    unsigned long long* arrFib = new unsigned long long[size];
 
 
 
@@ -43,14 +43,14 @@ int main(int argc, char** argv)
     //std::cout << std::elongndl << "Число Фибоначчи: \n";
     // Выводим число Фибоначчи
     
-    std::cout << "Число Фибоначчи: " << fooFibonacci(fib, size) << std::endl;
+    std::cout << "Число Фибоначчи: " << fooFibonacci(arrFib, size) << std::endl;
 
 
 
 
 
-    //delete [] fib;
-    fib = nullptr;
+    delete [] arrFib;
+    arrFib = nullptr;
     
 
 }
